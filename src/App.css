@@ -1,0 +1,46 @@
+.App {
+  font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Header styles */
+header {
+  background-color: #FAE269;
+  color: #333; /* Dark text for contrast */
+  text-align: center;
+  padding-top: 20px; /* Adjust padding as needed */
+  padding-bottom: 20px;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content */
+  align-items: center;
+}
+
+.header-container {
+  background-color: white; /* White background */
+  padding: 20px; /* Padding inside the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  margin: 10px;
+  width: calc(90% - 20px);
+  height: calc(50% - 20px);
+  /* Add more styling as needed */
+}
+
+/* Section styles */
+section {
+  border-bottom: 1px solid #ccc; /* Gray border for separation */
+  padding: 20px;
+}
+
+/* Project and Contact sections */
+section:nth-child(even) {
+  background-color: #f8f9fa; /* Light gray background for alternate sections */
+}
+
+/* Navbar brand color */
+.navbar-brand {
+  color: #f0ad4e; /* Yellow color */
+}
+
+/* Customize further as needed */
