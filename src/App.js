@@ -5,50 +5,46 @@ import LanguageSwitcher from './components/LanguageSwitcher'; // Assuming you ha
 function App() {
   return (
     <div className="App">
-      {/* Header Section */}
-      <header className="bg-light text-dark p-4">
-        <div className="header-container">
-          <h1>Welcome, I'm Annie!</h1>
-          <p>Aspiring Full-Stack Developer with a passion for technology and design.</p>
-          <button className="btn btn-warning">Download Resume</button>
-        </div>
-      </header>
-
-      {/* Navigation Bar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-white">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#home">Annie</a>
-          <div className="collapse navbar-collapse">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+      <nav className="main-nav">
+        <div className="nav-container">
+          <a className="nav-brand" href="#home">Annie</a>
+          <div className="nav-collapse">
+            <ul className="nav-list">
               <li className="nav-item">
-                <a className="nav-link" href="#projects">Projects</a>
+                <a className="nav-link" href="#projects">Skills</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#skills">Skills</a>
+                <a className="nav-link" href="#skills">Projects</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
-            <LanguageSwitcher /> {/* Language Switcher */}
+            <LanguageSwitcher />
           </div>
         </div>
       </nav>
 
-      {/* Main Content Sections */}
-      <section id="projects" className="p-4">
+      <header className="app-header">
+        <h1>Hello, I'm Annie</h1>
+        <p>Aspiring Full-Stack Developer with a passion for technology and design.</p>
+        <a href="https://www.youtube.com/" target="_blank" className="resume-link">Link to Youtube</a>
+        <button className="download-button">Download resume</button>
+      </header>
+
+      <section id="projects" className="section">
         <h2>Projects</h2>
-        {/* Project details */}
+        {/* Your project content */}
       </section>
 
-      <section id="skills" className="bg-light p-4">
+      <section id="skills" className="section light-bg">
         <h2>Skills</h2>
-        {/* Skills details */}
+        {/* Your skills content */}
       </section>
 
-      <section id="contact" className="p-4">
+      <section id="contact" className="section">
         <h2>Contact</h2>
-        {/* Contact details */}
+        {/* Your contact content */}
       </section>
     </div>
   );

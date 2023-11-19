@@ -2,45 +2,79 @@
   font-family: Arial, sans-serif; /* Default font */
 }
 
-/* Header styles */
-header {
-  background-color: #FAE269;
-  color: #333; /* Dark text for contrast */
+.app-header {
+  background-color: #FFDE36;
+  color: black; /* Dark text for contrast */
   text-align: center;
-  padding-top: 20px; /* Adjust padding as needed */
+  padding-top: 1px; /* Adjust padding as needed */
   padding-bottom: 20px;
   height: 100vh; /* Full viewport height */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertically center content */
   align-items: center;
+  font-size: 25px;
 }
 
-.header-container {
-  background-color: white; /* White background */
-  padding: 20px; /* Padding inside the container */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
-  margin: 10px;
-  width: calc(90% - 20px);
-  height: calc(50% - 20px);
-  /* Add more styling as needed */
+.main-nav {
+  background-color: #FFDE36;
 }
 
-/* Section styles */
-section {
-  border-bottom: 1px solid #ccc; /* Gray border for separation */
-  padding: 20px;
+.nav-container {
 }
 
-/* Project and Contact sections */
-section:nth-child(even) {
-  background-color: #f8f9fa; /* Light gray background for alternate sections */
+.nav-brand {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
 }
 
-/* Navbar brand color */
-.navbar-brand {
-  color: #f0ad4e; /* Yellow color */
+.nav-collapse {
+  /* Styles for the collapsible part of your navbar */
 }
 
-/* Customize further as needed */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  margin-right: 150px;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.resume-link {
+  /* Styles for your resume link */
+}
+
+.download-button {
+  background-color: white;
+  color: black;
+  border-color: black;
+  padding: 10px 20px;
+  margin: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.download-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.section {
+  padding: 16px;
+}
+
+.light-bg {
+  background-color: transparent;
+}
