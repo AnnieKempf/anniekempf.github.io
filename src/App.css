@@ -1,19 +1,22 @@
 .App {
-  font-family: Arial, sans-serif; /* Default font */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .app-header {
   background-color: #FFDE36;
-  color: black; /* Dark text for contrast */
-  text-align: center;
-  padding-top: 1px; /* Adjust padding as needed */
+  padding-top: 160px; 
   padding-bottom: 20px;
-  height: 100vh; /* Full viewport height */
+  height: 100vh; 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center content */
+  justify-content: top; 
   align-items: center;
-  font-size: 25px;
+  font-size: 30px;
+}
+
+.header-title {
+  color: black;
+  font-size: 75px;
 }
 
 .main-nav {
@@ -25,8 +28,8 @@
 
 .nav-brand {
   color: black;
-  font-weight: bold;
   font-size: 30px;
+  margin: 20px;
 }
 
 .nav-collapse {
@@ -39,19 +42,29 @@
   display: flex;
   justify-content: right;
   margin-right: 150px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .nav-item {
   margin: 0 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: background-color 0.2s,
+    color 0.2s;
+}
+
+.nav-item:hover {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 .nav-link {
   text-decoration: none;
   color: inherit;
-}
-
-.resume-link {
-  /* Styles for your resume link */
 }
 
 .download-button {
@@ -64,17 +77,37 @@
   cursor: pointer;
   font-weight: bold;
   font-size: 20px;
+  transition: background-color 0.15s,
+    color 0.15s;
+    box-shadow: 0.15s;
 }
 
 .download-button:hover {
   background-color: black;
   color: white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.download-button:active {
+  opacity: 0.5;
 }
 
 .section {
   padding: 16px;
+  background-color: #FEEF9E;
+  font-size: 20px;
 }
 
 .light-bg {
-  background-color: transparent;
+  background-color: #FFDE36;
+}
+
+.paragraph-text1 {
+  font-weight: bold;
+  line-height: 50px;
+  font-size: 14px;
+}
+
+.paragraph-text2 {
+  font-weight: bold;
 }
