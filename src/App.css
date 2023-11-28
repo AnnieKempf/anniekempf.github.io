@@ -2,6 +2,8 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+/*HEADER**/
 .app-header {
   background-color: #FFDE36;
   padding-top: 160px; 
@@ -19,52 +21,8 @@
   font-size: 75px;
 }
 
-.main-nav {
-  background-color: #FFDE36;
-}
-
-.nav-container {
-}
-
-.nav-brand {
-  color: black;
-  font-size: 30px;
-  margin: 20px;
-}
-
-.nav-collapse {
-  /* Styles for the collapsible part of your navbar */
-}
-
-.nav-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: right;
-  margin-right: 150px;
+.developer-text {
   font-weight: bold;
-  font-size: 20px;
-}
-
-.nav-item {
-  margin: 0 15px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: background-color 0.2s,
-    color 0.2s;
-}
-
-.nav-item:hover {
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
-}
-
-.nav-link {
-  text-decoration: none;
-  color: inherit;
 }
 
 .download-button {
@@ -92,22 +50,90 @@
   opacity: 0.5;
 }
 
+
+/*NAVBAR**/
+.main-nav {
+  background-color: #FFDE36;
+}
+
+.nav-container {
+}
+
+.nav-brand {
+  color: black;
+  font-size: 30px;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.nav-collapse {
+  /* Styles for the collapsible part of your navbar */
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  margin-right: 150px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-item {
+  margin: 0 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: background-color 0.2s,
+    color 0.2s;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-item:hover {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/*SECTION**/
 .section {
   padding: 16px;
-  background-color: #FEEF9E;
+  background-color: #2C2B2A;
   font-size: 20px;
+  height: 100vh;
 }
 
 .light-bg {
   background-color: #FFDE36;
 }
 
-.paragraph-text1 {
-  font-weight: bold;
-  line-height: 50px;
-  font-size: 14px;
+/*ABOUT**/
+
+.about-title {
+  font-size: 40px;
+  display: inline-block;
+  margin-right: 700px;
+  margin-left: 300px;
+  margin-top: 60px;
+  color: #EAEAE7;
+}
+.skills-title {
+  font-size: 40px;
+  display: inline-block;
+  color: #EAEAE7;
 }
 
-.paragraph-text2 {
-  font-weight: bold;
+.about-text1,
+.about-text2 {
+  width: 650px;
+  margin-left: 150px;
+  line-height: 35px;
+  color: #EAEAE7;
 }
