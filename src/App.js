@@ -12,7 +12,7 @@ function App() {
           <a className="nav-brand" href="#home">Annie Kempf</a>
           <div className="nav-collapse">
             <ul className="nav-list">
-            <li className="nav-item">
+              <li className="nav-item">
                 <a className="nav-link" href="#home">HOME</a>
               </li>
               <li className="nav-item">
@@ -32,22 +32,26 @@ function App() {
 
       <header className="app-header">
         <h1 className="header-title">Hello, I'm Annie</h1>
-        <p className ="header-text">Aspiring <span className="developer-text">Full-Stack</span> Developer with a passion for technology and design.</p>
+        <p className="header-text">Aspiring <span className="developer-text">Full-Stack</span> Developer with a passion for technology and design.</p>
         <button className="download-button">Download resume</button>
       </header>
 
       <section id="about" className="section">
-        <h2 className="about-title">Who am I?</h2>
-        <h2 className="skills-title">Explore my skills</h2>
-        <p className="about-text1">Well, <strong>I'm Annie</strong> - an Information System Science student graduating in May 2024, aiming to excel as a full-stack developer.</p>
-        <p className="about-text2">My enthusiasm for technology is driven by a 
-          love for problem-solving and creating efficient, user-centric solutions. With a competitive spirit inspired by strategic gaming, I'm eager to tackle challenges and 
-          contribute to a dynamic team environment. I'm committed to continuous learning and applying my knowledge, bringing both determination and creativity to overcome any 
-          obstacle in the tech world.</p>
+        <div className="about-container">
+          <h2 className="about-title">Who am I?</h2>
+          <p className="about-text1">Well, <strong>I'm Annie</strong> - an Information System Science student graduating in May 2024, aiming to excel as a full-stack developer.</p>
+          <p className="about-text2">My enthusiasm for technology is driven by a
+            love for problem-solving and creating efficient, user-centric solutions. With a competitive spirit inspired by strategic gaming, I'm eager to tackle challenges and
+            contribute to a dynamic team environment. I'm committed to continuous learning and applying my knowledge, bringing both determination and creativity to overcome any
+            obstacle in the tech world.</p>
+        </div>
+        <div className="skills-container">
+          <h2 className="skills-title">Skills</h2>
+        </div>
       </section>
 
-      <section id="skills" className="section light-bg">
-        <h2>Skills</h2>
+      <section id="projects" className="section light-bg">
+        <h2>Projects</h2>
         {/* Your skills content */}
       </section>
 

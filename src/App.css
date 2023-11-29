@@ -105,7 +105,7 @@
 /*SECTION**/
 .section {
   padding: 16px;
-  background-color: #2C2B2A;
+  background-color: #FDFCE9; /*#2C2B2A**/
   font-size: 20px;
   height: 100vh;
 }
@@ -116,24 +116,29 @@
 
 /*ABOUT**/
 
-.about-title {
-  font-size: 40px;
+.about-container {
   display: inline-block;
-  margin-right: 700px;
-  margin-left: 300px;
-  margin-top: 60px;
-  color: #EAEAE7;
+  width: 930px;
+  height: 50px;
 }
-.skills-title {
-  font-size: 40px;
+
+.skills-container {
   display: inline-block;
-  color: #EAEAE7;
+  width: 930px;
+  height: 800px;
+}
+
+.skills-title,
+.about-title {
+  font-size: 45px;
+  display: inline-block;
+  color: black;/*EAEAE7**/
+  margin-top: 100px;
+  margin-left: 350px;
 }
 
 .about-text1,
 .about-text2 {
-  width: 650px;
-  margin-left: 150px;
   line-height: 35px;
-  color: #EAEAE7;
+  color: black;
 }
