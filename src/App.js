@@ -32,7 +32,7 @@ function App() {
 
       <header className="app-header">
         <h1 className="header-title">Hello, I'm Annie</h1>
-        <p className="header-text">Aspiring <span className="developer-text">Full-Stack</span> Developer with a passion for technology and design.</p>
+        <p className="header-text">Aspiring <span className="developer-text">Full-Stack Developer</span> with a passion for logic and problem-solving.</p>
         <button className="download-button">Download resume</button>
       </header>
 
@@ -52,12 +52,10 @@ function App() {
 
       <section id="projects" className="section light-bg">
         <h2>Projects</h2>
-        {/* Your skills content */}
       </section>
 
       <section id="contact" className="section">
         <h2>Contact</h2>
-        {/* Your contact content */}
       </section>
 
 
