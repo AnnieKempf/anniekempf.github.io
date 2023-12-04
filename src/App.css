@@ -119,19 +119,18 @@
 .about-container {
   display: inline-block;
   width: 930px;
-  height: 50px;
+  vertical-align: top;
 }
 
 .skills-container {
   display: inline-block;
   width: 930px;
-  height: 800px;
+  vertical-align: top;
 }
 
 .skills-title,
 .about-title {
   font-size: 45px;
-  display: inline-block;
   color: black;/*EAEAE7**/
   margin-top: 100px;
   margin-left: 350px;
@@ -141,4 +140,6 @@
 .about-text2 {
   line-height: 35px;
   color: black;
+  width: 700px;
+  margin-left: 140px;
 }
