@@ -1,7 +1,9 @@
-.App {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
+.App {
+    font-family: 'Poppins', sans-serif;
+  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;**/
+}
 
 /*HEADER**/
 .app-header {
@@ -19,6 +21,7 @@
 .header-title {
   color: black;
   font-size: 75px;
+  margin-bottom: 5px;
 }
 
 .developer-text {
@@ -29,15 +32,16 @@
   background-color: white;
   color: black;
   border-color: black;
+  border-width: 2px;
   padding: 10px 20px;
-  margin: 30px;
+  margin: 40px;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
   font-size: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   transition: background-color 0.15s,
     color 0.15s;
-    box-shadow: 0.15s;
 }
 
 .download-button:hover {
@@ -114,14 +118,8 @@
   background-color: #FFDE36;
 }
 
-/*ABOUT**/
-
-.about-container {
-  display: inline-block;
-  width: 930px;
-  vertical-align: top;
-}
-
+/*ABOUT-ABOUT**/
+.about-container,
 .skills-container {
   display: inline-block;
   width: 930px;
@@ -132,7 +130,7 @@
 .about-title {
   font-size: 45px;
   color: black;/*EAEAE7**/
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 350px;
 }
 
@@ -140,6 +138,29 @@
 .about-text2 {
   line-height: 35px;
   color: black;
-  width: 700px;
+  width: 800px;
   margin-left: 140px;
 }
+
+.picture {
+  object-position: center;
+  box-shadow: 3px 3px 5px black;
+  margin-left: 300px;
+  margin-top: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  width: 700px;
+  height: 400px;
+  margin-left: 150px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.skills-category-titles {
+  display: inline-block;
+  margin-left: 150px;
+  margin-bottom: 50px;
+}
+
+/*test**/
