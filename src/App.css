@@ -10,10 +10,9 @@
   background-color: #FFDE36;
   padding-top: 160px; 
   padding-bottom: 20px;
-  height: 100vh; 
+  height: 70vh; 
   display: flex;
   flex-direction: column;
-  justify-content: top; 
   align-items: center;
   font-size: 30px;
 }
@@ -58,30 +57,38 @@
 /*NAVBAR**/
 .main-nav {
   background-color: #FFDE36;
+  display: flex; 
+  align-items: center;
+}
+
+.brand-container {
+  height: 100px;
 }
 
 .nav-container {
+  flex-grow: 1;
+}
+
+.nav-list {
+  list-style: none;
+  padding-top: 30px;
+  display: flex;
+  justify-content: right;
+  margin-right: 70px;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #FFDE36; 
 }
 
 .nav-brand {
   color: black;
   font-size: 30px;
-  margin: 20px;
   text-decoration: none;
-}
-
-.nav-collapse {
-  /* Styles for the collapsible part of your navbar */
-}
-
-.nav-list {
-  list-style: none;
+  margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: right;
-  margin-right: 150px;
-  font-weight: bold;
-  font-size: 20px;
+  margin-left: 20px;
+  font-weight: 500;
 }
 
 .nav-item {
@@ -92,6 +99,9 @@
   padding-bottom: 10px;
   transition: background-color 0.2s,
     color 0.2s;
+}
+
+.nav-collapse {
 }
 
 .nav-link {
@@ -164,3 +174,14 @@
 }
 
 /*test**/
+.flexbox {
+  display: flex;
+  flex-direction: row;
+}
+.flexbox1 {
+  background: pink;
+}
+
+.flexbox2 {
+  background: lightblue;
+}

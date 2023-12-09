@@ -1,32 +1,31 @@
 import React from 'react';
 import './App.css';
-import LanguageSwitcher from './components/LanguageSwitcher'; // Assuming you have this component
+import LanguageSwitcher from './components/LanguageSwitcher';
 
 function App() {
   return (
     <div id="home" className="App">
 
-
       <nav className="main-nav">
-        <div className="nav-container">
-          <a className="nav-brand" href="#home">Annie Kempf</a>
-          <div className="nav-collapse">
-            <ul className="nav-list">
-              <li className="nav-item">
-                <a className="nav-link" href="#home">HOME</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#about">ABOUT</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#projects">PROJECTS</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#contact">CONTACT</a>
-              </li>
-            </ul>
-            <LanguageSwitcher />
+          <div className="brand-container">
+            <a className="nav-brand" href="#home">Annie</a>
           </div>
+          <div className="nav-container">
+          <ul className="nav-list">
+            <li className="nav-item">
+              <a className="nav-link" href="#home">HOME</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#projects">PROJECTS</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+          <LanguageSwitcher />
         </div>
       </nav>
 
@@ -87,6 +86,14 @@ function App() {
 
       <section id="projects" className="section light-bg">
         <h2>Projects</h2>
+        <div className="flexbox">
+          <div className="flexbox1">
+            div 1
+          </div>
+          <div className="flexbox2">
+            div 2
+          </div>
+        </div>
       </section>
 
       <section id="contact" className="section">
