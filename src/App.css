@@ -2,15 +2,14 @@
 
 .App {
     font-family: 'Poppins', sans-serif;
-  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;**/
 }
 
 /*HEADER**/
 .app-header {
   background-color: #FFDE36;
-  padding-top: 160px; 
+  padding-top: 250px; 
   padding-bottom: 20px;
-  height: 70vh; 
+  height: 90vh; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,8 +29,7 @@
 .download-button {
   background-color: white;
   color: black;
-  border-color: black;
-  border-width: 2px;
+  border: 2px solid black;
   padding: 10px 20px;
   margin: 40px;
   border-radius: 4px;
@@ -59,10 +57,16 @@
   background-color: #FFDE36;
   display: flex; 
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 100;
 }
 
 .brand-container {
-  height: 100px;
+  height: 50px;
 }
 
 .nav-container {
@@ -86,17 +90,14 @@
   font-size: 30px;
   text-decoration: none;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   margin-left: 20px;
   font-weight: 500;
 }
 
 .nav-item {
   margin: 0 15px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 25px;
   transition: background-color 0.2s,
     color 0.2s;
 }
@@ -119,7 +120,7 @@
 /*SECTION**/
 .section {
   padding: 16px;
-  background-color: #FDFCE9; /*#2C2B2A**/
+  background-color: #FFDE36; /*#FDFCE9, #2C2B2A**/
   font-size: 20px;
   height: 100vh;
 }
@@ -140,8 +141,9 @@
 .about-title {
   font-size: 45px;
   color: black;/*EAEAE7**/
-  margin-top: 50px;
-  margin-left: 350px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .about-text1,
@@ -157,20 +159,58 @@
   box-shadow: 3px 3px 5px black;
   margin-left: 300px;
   margin-top: 20px;
+  border-radius: 10px;
+
 }
 
 .skills-grid {
   display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 20px; 
   width: 700px;
-  height: 400px;
-  margin-left: 150px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  background-color: rgb(243, 243, 243);
+  border: 8px solid black;
+  box-shadow: 3px 3px 5px black;
 }
 
-.skills-category-titles {
-  display: inline-block;
-  margin-left: 150px;
-  margin-bottom: 50px;
+@media (max-width: 1000px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.skill-item .tooltip {
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding: 4px 5px 5px 5px;
+  opacity: 0;
+  border: 3px solid black;
+  transition: opacity 0.15s;
+  font-weight: bold;
+}
+
+.skill-item:hover .tooltip {
+  opacity: 1;
 }
 
 /*test**/
