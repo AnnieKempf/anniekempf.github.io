@@ -6,6 +6,7 @@ function App() {
   return (
     <div id="home" className="App">
 
+      {/* Navbar */}
       <nav className="main-nav">
         <div className="brand-container">
           <a className="nav-brand" href="#home">Annie</a>
@@ -25,10 +26,11 @@ function App() {
               <a className="nav-link" href="#contact">CONTACT</a>
             </li>
           </ul>
-          <LanguageSwitcher />
+          {/*<LanguageSwitcher />*/}
         </div>
       </nav>
 
+      {/* Header */}
       <header className="app-header">
         <h1 className="header-title">
           Hello, I'm Annie
@@ -36,9 +38,12 @@ function App() {
         <p className="header-text">
           Aspiring <span className="developer-text">Full-Stack Developer</span> with a passion for logic and problem-solving.
         </p>
-        <button className="download-button">Download resume</button>
+        <a href="https://drive.google.com/file/d/1EFmY9YgTw-e6FlJwtTRQAgWbcsZPlO9W/view?usp=sharing" target="_blank">
+          <button className="download-button">Resume</button>
+        </a>
       </header>
 
+      {/* About */}
       <section id="about" className="section">
         <div className="about-container">
           <h2 className="about-title">Who am I?</h2>
@@ -51,9 +56,10 @@ function App() {
             contribute to a dynamic team environment. I'm committed to continuous learning and applying my knowledge, bringing both determination and creativity to overcome any
             obstacle in the tech world.
           </p>
-          <img className="picture" src="profilepic.jpeg" alt="Profile picture" width="350" height="400"></img>
+          <img className="picture" src="profile-pictures/CVbild.png" alt="Profile picture" width="350" height="350"></img>
         </div>
 
+        {/* Skills */}
         <div className="skills-container">
           <h2 className="skills-title">Skills</h2>
           <div className="skills-grid">
@@ -74,22 +80,97 @@ function App() {
         </div>
       </section >
 
+      {/* Projects */}
       <section id="projects" className="section light-bg">
-        <h2>Projects</h2>
-        <div className="flexbox">
-          <div className="flexbox1">
-            div 1
-          </div>
-          <div className="flexbox2">
-            div 2
-          </div>
+        <h2 className="projects-title">Projects</h2>
+        <div className="projects-container">
+          <img src="icons/work-in-progress.png"></img>
+          {/*<ol className="projects-grid">
+            <li className="projects-card">
+              <p className="project-name">
+                Project 1
+              </p>
+              <p className="project-date">
+                Date
+              </p>
+              <img className="project-img"></img>
+              <p className="project-description">
+                Description
+              </p>
+              <div className="project-button-container">
+                <button className="project-button">
+                  Github repo
+                </button>
+                <button className="project-button">
+                  Live website
+                </button>
+              </div>
+              <p className="project-description">
+                Built using:
+              </p>
+            </li>
+            <li className="projects-card">
+              <p className="project-name">
+                Project 2
+              </p>
+              <p className="project-date">
+                Date
+              </p>
+              <img className="project-img"></img>
+              <p className="project-description">
+                Description
+              </p>
+              <div className="project-button-container">
+                <button className="project-button">
+                  Github repo
+                </button>
+                <button className="project-button">
+                  Live website
+                </button>
+              </div>
+              <p className="project-description">
+                Built using:
+              </p>
+            </li>
+            <li className="projects-card">
+              <p className="project-name">
+                Project 3
+              </p>
+              <p className="project-date">
+                Date
+              </p>
+              <img className="project-img"></img>
+              <p className="project-description">
+                Description
+              </p>
+              <div className="project-button-container">
+                <button className="project-button">
+                  Github repo
+                </button>
+                <button className="project-button">
+                  Live website
+                </button>
+              </div>
+              <p className="project-description">
+                Built using:
+              </p>
+            </li>
+          </ol>*/}
         </div>
       </section>
 
+      {/* Contact */}
       <section id="contact" className="section">
-        <h2>Contact</h2>
+        <h2 className="projects-title">Contact</h2>
+        <div className="contact-field">
+          <div className="name-field">
+          </div>
+          <div className="email-field">
+          </div>
+          <div className="message-field">
+          </div>
+        </div>
       </section>
-
 
     </div >
   );
