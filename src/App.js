@@ -84,7 +84,7 @@ function App() {
       <section id="projects" className="section light-bg">
         <h2 className="projects-title">Projects</h2>
         <div className="projects-container">
-          <img src="icons/work-in-progress.png"></img>
+          <img className="workinprogress-img" src="icons/work-in-progress.png"></img>
           {/*<ol className="projects-grid">
             <li className="projects-card">
               <p className="project-name">
@@ -162,12 +162,15 @@ function App() {
       {/* Contact */}
       <section id="contact" className="section">
         <h2 className="projects-title">Contact</h2>
-        <div className="contact-field">
-          <div className="name-field">
-          </div>
-          <div className="email-field">
-          </div>
-          <div className="message-field">
+        <div className="contact-container">
+          <img src="icons/work-in-progress.png"></img>
+          <div className="contact-field">
+            <div className="name-field">
+            </div>
+            <div className="email-field">
+            </div>
+            <div className="message-field">
+            </div>
           </div>
         </div>
       </section>
