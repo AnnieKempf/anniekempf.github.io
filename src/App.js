@@ -38,7 +38,7 @@ function App() {
         <p className="header-text">
           Aspiring <span className="developer-text">Full-Stack Developer</span> with a passion for logic and problem-solving.
         </p>
-        <a href="https://drive.google.com/file/d/1lLABMPpH2FQkiiJLT6hxyAFUEI6qWHu7/view?usp=sharing" target="_blank">
+        <a href="https://drive.google.com/file/d/1LflznxTjUSBAPbgDOVi689LHIa0eyolU/view?usp=sharing" target="_blank">
           <button className="download-button">Resume</button>
         </a>
       </header>
